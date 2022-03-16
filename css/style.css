@@ -270,8 +270,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3D85F9;
     padding: 10px;
+    transition: background 300ms linear;
+}
+
+.nav.active {
+    background-color: #3D85F9;
 }
 
 .menu {
