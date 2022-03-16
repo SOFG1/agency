@@ -275,8 +275,7 @@ a {
     background-color: #3D85F9;
 }
 
-.nav-inner {
-    display: flex;
+.nav__inner {
     justify-content: space-between;
     align-items: center;
 }
