@@ -106,17 +106,45 @@ a {
     position: relative;
     border-radius: 27px;
     font-size: 14px;
-    padding: 9.5px 20px;
-    transition: .3s ease;
+    padding: .7rem 1.5rem;
+    border: 2px solid yellow;
+    color: yellow;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform .2s ease-in-out;
+    white-space: nowrap;
+}
+
+.btn_default::after {
+    background-color: #ff0;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.btn_default:hover::after {
+    transform: translate(0, 0);
+}
+
+.btn_default:hover {
+    border: 2px solid transparent;
+    color: #000;
+    transform: scale(1.05);
+    will-change: transform;
 }
 
 .z-index-6 {
     z-index: 6;
-}
-
-.btn_default:hover {
-    background: linear-gradient(262.95deg, #FFE600 0%, #FA940B 99.33%);
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
 }
 
 .circle-big-img {
