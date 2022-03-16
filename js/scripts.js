@@ -1,3 +1,6 @@
+// Animate on Scroll library
+AOS.init();
+
 // Header Background on scroll
 document.addEventListener('scroll', () => {
     if (window.pageYOffset > 40) document.querySelector('.js-header').classList.add('active');
@@ -58,7 +61,7 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #FFFF00}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #FFE600}";
     document.body.appendChild(css);
 };
 
