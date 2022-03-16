@@ -267,15 +267,18 @@ a {
     top: 0;
     width: 100%;
     z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px;
     transition: background 300ms linear;
 }
 
 .nav.active {
     background-color: #3D85F9;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu {
